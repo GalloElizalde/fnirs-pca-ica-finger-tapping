@@ -1,9 +1,8 @@
 # fNIRS Finger Tapping — PCA & ICA (HbO / HbR)
 
 End-to-end mini-project using **fNIRS finger tapping data** to decompose hemodynamic signals into latent components with **unsupervised learning**.  
-The goal is to separate **task-related activity** from **physiological / structured noise** using **PCA** and **ICA**, and to compare both methods quantitatively.
+The goal is to identify components correlated with task timing and components dominated by physiological or structured noise, using **Principal Component Analysis (PCA)** and **Independent Component Analysis (ICA)**, and to compare both methods quantitatively.
 
-This project is intentionally simple and transparent, focusing on signal structure rather than prediction.
 
 ---
 
@@ -15,7 +14,6 @@ This project is intentionally simple and transparent, focusing on signal structu
   - **PCA** (variance-based components)
   - **ICA (FastICA)** (statistically independent components)
 - Identify components that correlate with the finger-tapping task
-- Compare PCA vs ICA using simple, interpretable metrics
 
 ---
 
@@ -55,18 +53,6 @@ This project is intentionally simple and transparent, focusing on signal structu
 - Extracts statistically independent components
 - Better suited to isolating structured noise and non-Gaussian sources
 - Same metrics as PCA for direct comparison
-
----
-
-## How to run
-
-From inside `src/`:
-
-```bash
-python PCA_analysis.py
-python ICA_analysis.py
-
-
 
 ---
 
