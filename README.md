@@ -109,8 +109,4 @@ Borsook, David; Boas, David; Becerra, Lino.
 **Ethics approval:**  
 Massachusetts General Hospital IRB.
 
-**Funding:**  
-NIH-NIGMS (1-R01-GM104986, 1-R01-GM122405), The Mayday Fund (New York).
-
-When using this dataset, please acknowledge the original authors as specified in the dataset metadata.
 
