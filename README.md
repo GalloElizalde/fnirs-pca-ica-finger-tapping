@@ -42,11 +42,11 @@ The goal is to identify components correlated with task timing and components do
   - Maximizes explained variance
 - Metrics:
   - **Reconstruction error:**  
-    \[
+    $
     \frac{\|X - \hat{X}\|}{\|X\|}
-    \]
+    $
   - **Task alignment:**  
-    max\_k |corr(Z_k(t), regressor(t))|
+    $max\_k |corr(Z_k(t), regressor(t))|$
 
 ### ICA (FastICA)
 - Same input data as PCA
