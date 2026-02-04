@@ -4,7 +4,7 @@ End-to-end mini-project using **fNIRS finger tapping data** to decompose hemodyn
 The goal is to identify components correlated with task timing and components dominated by physiological or structured noise, using **Principal Component Analysis (PCA)** and **Independent Component Analysis (ICA)**, and to compare both methods quantitatively.
 
 
----
+
 
 ## Project goal
 
@@ -15,7 +15,7 @@ The goal is to identify components correlated with task timing and components do
   - **ICA (FastICA)** (statistically independent components)
 - Identify components that correlate with the finger-tapping task
 
----
+
 
 ## Data & preprocessing
 
@@ -28,7 +28,7 @@ The goal is to identify components correlated with task timing and components do
   - Band-pass filter: **0.02 – 0.20 Hz**
     - Removes slow drift and high-frequency physiological noise
 
----
+
 
 ## Methods
 
@@ -53,7 +53,7 @@ The goal is to identify components correlated with task timing and components do
 - Better suited to isolating structured noise and non-Gaussian sources
 - Same metrics as PCA for direct comparison
 
----
+
 
 ## Results
 
@@ -77,7 +77,7 @@ The goal is to identify components correlated with task timing and components do
 - Best task correlation (|corr|) observed: up to ~0.39
 - FastICA convergence warnings appear for some subjects
 
----
+
 
 ### Files generated
 
@@ -91,3 +91,26 @@ The goal is to identify components correlated with task timing and components do
   - `best_abs_corr`
   - `best_component`
   - `best_corr`
+
+## Dataset
+
+This project uses the publicly available **Electrical_Thermal_FingerTapping_2015** dataset.
+
+- **Modality:** functional Near-Infrared Spectroscopy (fNIRS)
+- **Task:** Finger tapping
+- **Format:** BIDS (version 1.7.1)
+- **Signals analyzed:** HbO and HbR
+- **License:** CC0
+
+**Authors:**  
+Yücel, Meryem; Selb, Juliette; Aasted, Christopher; Petkov, Mihayl;  
+Borsook, David; Boas, David; Becerra, Lino.
+
+**Ethics approval:**  
+Massachusetts General Hospital IRB.
+
+**Funding:**  
+NIH-NIGMS (1-R01-GM104986, 1-R01-GM122405), The Mayday Fund (New York).
+
+When using this dataset, please acknowledge the original authors as specified in the dataset metadata.
+
